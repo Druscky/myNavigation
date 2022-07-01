@@ -8,5 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#C16C12</color>
+    <color name="cake_orange">#E67A57</color>
     <color name="green">#5A7C1A</color>
+    <color name="cake_green">#4CAF50</color>
+
 </resources>

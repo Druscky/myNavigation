@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.fragment.app.setFragmentResult
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.example.mynavigation.databinding.FragmentFirstBinding
@@ -32,6 +34,8 @@ class FirstFragment : Fragment() {
         b.btnAtras1.setOnClickListener {
             view.findNavController().navigate(R.id.action_firstFragment_to_initFragment, null)
         }
+        b.tvContador1.setText(arguments?.getString("Contador"))
     }
 
 }
+

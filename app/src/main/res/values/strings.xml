@@ -11,6 +11,8 @@
     <string name="tvN1">1</string>
     <string name="tvN2">2</string>
     <string name="tvN3">3</string>
+    <string name="tvContadorInit">0</string>
+
 
 
 
