@@ -16,7 +16,7 @@ class InitFragment : Fragment() {
     private var _b:FragmentInitBinding? = null
     private val b get() = _b!!
 
-    var cont = 0
+    var cont  = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,9 +34,9 @@ class InitFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        b.btnFrag2.setOnClickListener {
-            view.findNavController().navigate(R.id.action_initFragment_to_secondFragment, null)
-        }
+//        b.btnFrag2.setOnClickListener {
+//            view.findNavController().navigate(R.id.action_initFragment_to_secondFragment, null)
+//        }
         b.tvContadorInit.setOnClickListener {
             cont++
             b.tvContadorInit.text = cont.toString()
@@ -45,10 +45,12 @@ class InitFragment : Fragment() {
             val bundle = bundleOf("Contador" to cont.toString())
             view.findNavController().navigate(R.id.action_initFragment_to_firstFragment, bundle)
         }
+        b.btnFrag2.setOnClickListener {
+            val action = InitFragmentDirections.actionInitFragmentToSecondFragment(cont) //<- Este cont, lo saco de los Atributos de nav_graph.xml
+            view.findNavController().navigate(action)                               // El que aconseja Google
+        }
     }
 }
 
 
 
-//b.btnFrag2.setonClickListener{
-// val action = InitFragmentDirections.action}

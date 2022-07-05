@@ -12,6 +12,9 @@
     <string name="tvN2">2</string>
     <string name="tvN3">3</string>
     <string name="tvContadorInit">0</string>
+    <string name="opHome">Inicio</string>
+    <string name="opProfile">Perfil</string>
+    <string name="opSettings">Ajustes</string>
 
 
 

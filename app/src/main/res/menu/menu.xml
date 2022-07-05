@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opHome"
+        android:title="@string/opHome"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/opProfile"
+        android:title="@string/opProfile"
+        android:icon="@drawable/ic_profile"/>
+    <item
+        android:id="@+id/opSettings"
+        android:title="@string/opSettings"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+</menu>

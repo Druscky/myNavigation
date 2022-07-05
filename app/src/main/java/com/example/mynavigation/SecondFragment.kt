@@ -6,16 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import com.example.mynavigation.databinding.FragmentInitBinding
+import androidx.navigation.fragment.navArgs
 import com.example.mynavigation.databinding.FragmentSecondBinding
 
 
 class SecondFragment : Fragment() {
     private var _b: FragmentSecondBinding? = null
     private val b get() = _b!!
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private val args: SecondFragmentArgs by navArgs()
 
         override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
@@ -32,5 +30,6 @@ class SecondFragment : Fragment() {
         b.btnSiguiente2.setOnClickListener {
             view.findNavController().navigate(R.id.action_secondFragment_to_thirdFragment, null)
         }
+       b.tvContador2.text = args.variable1.toString()
     }
 }

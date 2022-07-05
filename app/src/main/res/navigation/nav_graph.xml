@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <argument
+            android:name="variable1"
+            android:defaultValue="1416" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
